@@ -19,7 +19,6 @@ package com.baidu.brpc.server.handler;
 import java.io.IOException;
 import java.util.List;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.buffer.DynamicCompositeByteBuf;
 import com.baidu.brpc.exceptions.BadSchemaException;
 import com.baidu.brpc.exceptions.NotEnoughDataException;
@@ -29,6 +28,7 @@ import com.baidu.brpc.protocol.Protocol;
 import com.baidu.brpc.protocol.ProtocolManager;
 import com.baidu.brpc.server.RpcServer;
 
+import ChannelInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

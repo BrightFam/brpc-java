@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.baidu.brpc;
+
 
 import com.baidu.brpc.buffer.DynamicCompositeByteBuf;
 import com.baidu.brpc.client.FastFutureStore;
@@ -36,6 +36,10 @@ import lombok.extern.slf4j.Slf4j;
 @Getter
 @Slf4j
 public class ChannelInfo {
+    public static org.slf4j.Logger getLog() {
+        return log;
+    }
+
     private static final AttributeKey<ChannelInfo> CLIENT_CHANNEL_KEY = AttributeKey.valueOf("client_key");
     private static final AttributeKey<ChannelInfo> SERVER_CHANNEL_KEY = AttributeKey.valueOf("server_key");
 
@@ -175,17 +179,21 @@ public class ChannelInfo {
         @Override
         public boolean visitElement(RpcFuture fut) {
             // 与当前channel相同则删除
-            ChannelInfo chanInfo = fut.getChannelInfo();
-            if (null == chanInfo) {
-                return true;
+
+
+            return true;
             }
 
             // 不删除返回true
-            return currentChannel != chanInfo.channel;
+            return currentChannel != fut.getChannelInfo().channel;
         }
 
+        /**
+         * @param fut
+         */
         @Override
-        public void actionAfterDelete(RpcFuture fut) {
+        public void actionAfterDelete(@SuppressWarnings.value("rawtypes") final 
+        RpcFuture fut) {
             Response response = fut.getRpcClient().getProtocol().createResponse();
             response.setException(exception);
             fut.handleResponse(response);

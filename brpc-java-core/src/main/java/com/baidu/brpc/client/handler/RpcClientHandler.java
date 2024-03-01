@@ -16,13 +16,13 @@
 
 package com.baidu.brpc.client.handler;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.client.RpcClient;
 import com.baidu.brpc.exceptions.BadSchemaException;
 import com.baidu.brpc.exceptions.NotEnoughDataException;
 import com.baidu.brpc.exceptions.RpcException;
 import com.baidu.brpc.exceptions.TooBigDataException;
 
+import ChannelInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

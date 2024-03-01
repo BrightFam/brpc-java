@@ -24,3 +24,5 @@ brpc-java-core/.factorypath
 brpc-java-examples/.factorypath
 brpc-java-spring/.factorypath
 PublicPbrpcProto.java
+
+.fake

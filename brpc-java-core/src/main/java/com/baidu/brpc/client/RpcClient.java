@@ -52,7 +52,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.client.channel.BrpcChannel;
 import com.baidu.brpc.client.channel.ChannelType;
 import com.baidu.brpc.client.handler.IdleChannelHandler;
@@ -75,6 +74,8 @@ import com.baidu.brpc.thread.ClientCallBackThreadPoolInstance;
 import com.baidu.brpc.thread.ClientTimeoutTimerInstance;
 import com.baidu.brpc.thread.ShutDownManager;
 import com.baidu.brpc.utils.ThreadPool;
+
+import ChannelInfo;
 
 /**
  * Created by huwenwei on 2017/4/25.

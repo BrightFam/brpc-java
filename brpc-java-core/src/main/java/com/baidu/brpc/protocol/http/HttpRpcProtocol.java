@@ -16,7 +16,6 @@
 
 package com.baidu.brpc.protocol.http;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.ProtobufRpcMethodInfo;
 import com.baidu.brpc.RpcMethodInfo;
 import com.baidu.brpc.buffer.DynamicCompositeByteBuf;
@@ -38,6 +37,8 @@ import com.google.protobuf.Descriptors;
 import com.google.protobuf.ExtensionRegistry;
 import com.google.protobuf.Message;
 import com.googlecode.protobuf.format.JsonFormat;
+
+import ChannelInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;

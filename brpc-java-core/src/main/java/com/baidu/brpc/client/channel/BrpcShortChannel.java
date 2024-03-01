@@ -18,10 +18,11 @@ package com.baidu.brpc.client.channel;
 
 import java.util.NoSuchElementException;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.client.RpcClient;
 
 import com.baidu.brpc.client.instance.ServiceInstance;
+
+import ChannelInfo;
 import io.netty.channel.Channel;
 
 /**

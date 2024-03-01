@@ -6,10 +6,10 @@ package com.baidu.brpc.client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.exceptions.RpcException;
 import com.baidu.brpc.protocol.Response;
 
+import ChannelInfo;
 import io.netty.util.Timeout;
 import io.netty.util.TimerTask;
 

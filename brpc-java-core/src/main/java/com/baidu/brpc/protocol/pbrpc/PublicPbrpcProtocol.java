@@ -1,6 +1,5 @@
 package com.baidu.brpc.protocol.pbrpc;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.RpcMethodInfo;
 import com.baidu.brpc.buffer.DynamicCompositeByteBuf;
 import com.baidu.brpc.client.RpcFuture;
@@ -26,6 +25,8 @@ import com.baidu.brpc.server.ServiceManager;
 import com.baidu.brpc.utils.ProtobufUtils;
 import com.baidu.brpc.utils.RpcMetaUtils;
 import com.google.protobuf.ByteString;
+
+import ChannelInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;

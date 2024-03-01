@@ -21,7 +21,6 @@ import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.RpcMethodInfo;
 import com.baidu.brpc.buffer.DynamicCompositeByteBuf;
 import com.baidu.brpc.client.RpcFuture;
@@ -42,6 +41,7 @@ import com.baidu.brpc.server.ServiceManager;
 import com.baidu.brpc.utils.ProtobufUtils;
 import com.baidu.brpc.utils.RpcMetaUtils;
 
+import ChannelInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;

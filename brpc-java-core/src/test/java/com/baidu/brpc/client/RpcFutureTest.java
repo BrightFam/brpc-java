@@ -36,7 +36,6 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
 
-import com.baidu.brpc.ChannelInfo;
 import com.baidu.brpc.RpcMethodInfo;
 import com.baidu.brpc.client.channel.BrpcChannel;
 import com.baidu.brpc.exceptions.RpcException;
@@ -45,6 +44,7 @@ import com.baidu.brpc.protocol.Response;
 import com.baidu.brpc.protocol.RpcResponse;
 import com.baidu.brpc.test.BaseMockitoTest;
 
+import ChannelInfo;
 import io.netty.util.Timeout;
 
 public class RpcFutureTest extends BaseMockitoTest {
